@@ -4,10 +4,10 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - Julius:  https://github.com/das-haustelles/julius-front-end-capstone
+  - Jon:     https://github.com/das-haustelles/product-description
+  - Stanley: https://github.com/das-haustelles/stanley-front-end-capstone
+  - Rich:    https://github.com/das-haustelles/rich-front-end-capstone
 
 ## Table of Contents
 
