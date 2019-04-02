@@ -1,15 +1,15 @@
 const mongoose = require('mongoose');
-const db = require('../index.js');
+require('../index.js');
 
 const settingsSchema = new mongoose.Schema({
   language: String,
-	currency: String
+  currency: String,
 });
 const Settings = mongoose.model('Settings', settingsSchema);
 
 // TEST
 // var testSetting = new Settings({
-//   language: 'English', 
+//   language: 'English'
 //   currency: 'USD'
 // })
 
@@ -18,6 +18,6 @@ const Settings = mongoose.model('Settings', settingsSchema);
 //   // data saved!
 // })
 
-const Location = mongoose.model('Location', locationSchema);
+// const Location = mongoose.model('Location', locationSchema);
 
-module.exports = Location;
+module.exports = Settings;
