@@ -7,17 +7,4 @@ const settingsSchema = new mongoose.Schema({
 });
 const Settings = mongoose.model('Settings', settingsSchema);
 
-// TEST
-// var testSetting = new Settings({
-//   language: 'English'
-//   currency: 'USD'
-// })
-
-// testSetting.save(function(err) {
-//   if (err) return console.log(err);
-//   // data saved!
-// })
-
-// const Location = mongoose.model('Location', locationSchema);
-
 module.exports = Settings;
