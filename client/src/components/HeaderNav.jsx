@@ -7,18 +7,32 @@ class HeaderNav extends React.Component {
   render() {
     return (
       <div id='headerNav'>
-        <ul>
+        <ul id='navList'>
           {/* Signin */}
-          <li></li>
+          <li>
+            <span id='iconHolder'>1</span>
+            <img src=""></img>
+          </li>
           {/* Language */}
-          <li>2</li>
+          <li>
+            <span id='iconHolder'>1</span>
+            <img src=""></img>
+          </li>
           {/* Currency */}
-          <li>3</li>
+          <li>
+            <span id='iconHolder'>1</span>
+            <img src=""></img>
+          </li>
           {/* Search */}
-          <li>4</li>
+          <li>
+            <span id='iconHolder'>1</span>
+            <img src=""></img>
+          </li>
           {/* DropSide Menu */}
-          <li></li>
-
+          <li>
+            <span id='iconHolder'>1</span>
+            <img src=""></img>
+          </li>
         </ul>
       </div>
     )
@@ -26,3 +40,12 @@ class HeaderNav extends React.Component {
 }
 
 export default HeaderNav;
+
+
+/*
+1. Signin
+2. Language 
+3. Currency
+4. Search
+5. DropSide Menu
+*/

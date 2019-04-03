@@ -1,4 +1,7 @@
 
+
+#logo 
+
 #logoPic {
   float: left;
   border-radius: 7px;
@@ -18,4 +21,14 @@
 
 #headerNav {
   float: right;
+}
+
+#navList {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+  
+#iconHolder{
+  display: inline;
 }
