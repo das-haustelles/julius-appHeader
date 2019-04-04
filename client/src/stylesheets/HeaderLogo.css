@@ -1,14 +1,11 @@
 
-
-#logo 
-
-#logoPic {
+:local(#logoPic) {
   float: left;
   border-radius: 7px;
   margin: 5px 10px 5px 5px;
 }
 
-#logoText {
+:local(#logoText) {
   float: left;
   vertical-align: top;
   font-family: Verdana;
@@ -17,18 +14,4 @@
   color: white; 
   margin-top: 15px;
   background: black;
-}
-
-#headerNav {
-  float: right;
-}
-
-#navList {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 20px;
-}
-  
-#iconHolder{
-  display: inline;
 }

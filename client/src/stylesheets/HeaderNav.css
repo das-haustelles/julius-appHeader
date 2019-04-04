@@ -1,0 +1,22 @@
+:local(#headerNav) {
+  display: flex;
+  flex-flow: column;
+  float: right;
+  background: black;
+  color: white;
+}
+
+:local(#navList) {
+	min-width: 696px;
+	list-style: none;
+	padding-top: 20px;
+}
+  
+:local(li#iconHolder) {
+  display: inline;
+  float: right;
+}
+
+:local(ul li) {
+  display: inline;
+}

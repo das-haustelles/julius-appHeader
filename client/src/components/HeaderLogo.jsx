@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from '../stylesheets/HeaderLogo.css'
+
 
 class HeaderLogo extends React.Component {
   constructor(props) {
@@ -6,10 +8,10 @@ class HeaderLogo extends React.Component {
   }
   render() {
     return (
-      <div id='logo'>
+      <div id={styles.logo}>
         {/* Logo and 'Hostelworld'*/}
-        <img id='logoPic' src="https://www.complaintsboard.com/thumb.php?src=hostelworld.png&wmax=182&hmax=300&quality=70&nocrop=1&bname=121731" height="50" width="50"/>
-        <h2 id='logoText' >HOSTELWORLD</h2>
+        <img id={styles.logoPic} src="https://www.complaintsboard.com/thumb.php?src=hostelworld.png&wmax=182&hmax=300&quality=70&nocrop=1&bname=121731" height="50" width="50"/>
+        <h2 id={styles.logoText} >HOSTELWORLD</h2>
       </div>
     )
   }
