@@ -1,17 +1,21 @@
 
+:local(#logoCont) {
+  float: left;
+  background: black;
+}
+
 :local(#logoPic) {
   float: left;
-  border-radius: 7px;
-  margin: 5px 10px 5px 5px;
+  height: 60px;
+  width: 60px;
+  border-radius: 8px;
+  margin: 6px 10px 5px 5px;
 }
 
 :local(#logoText) {
   float: left;
-  vertical-align: top;
   font-family: Verdana;
-  font-size: 20px;
+  font-size: 25px;
   font-weight: bold;
   color: white; 
-  margin-top: 15px;
-  background: black;
 }

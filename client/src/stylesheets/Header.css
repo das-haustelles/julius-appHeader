@@ -1,0 +1,13 @@
+
+:local(.header) {
+  /* height: 408.5;
+  width: 1302px; */
+  background-color: brown;
+  /* background-image: url('https://a.hwstatic.com/image/upload/f_auto,q_auto,t_80,c_fill,g_north/v1/propertyimages/2/293315/xihcxa6w30pcik0le3kv') */
+}
+
+
+:local(#headerCont) {
+  margin-left: 7%;
+  margin-right: 7%;
+}

@@ -1,22 +1,46 @@
+:local(.icon) {
+  height: 20px;
+  width: 20px;
+}
+
+:local(.language) {
+  width: 25px;
+}
+
+:local(.searchIcon) {
+  height: 25px;
+  width: 25px;
+}
+
 :local(#headerNav) {
   display: flex;
-  flex-flow: column;
   float: right;
-  background: black;
+  background-color: darkmagenta;
   color: white;
 }
 
 :local(#navList) {
-	min-width: 696px;
-	list-style: none;
-	padding-top: 20px;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  float: left;
+  margin-right: 17px;
+  margin-top: 23px;
 }
   
-:local(li#iconHolder) {
-  display: inline;
-  float: right;
+:local(.iconHolder) {
+  display: flex;
+  border-radius: 3px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 11px;
+  border: 1px solid yellow;
+  height: 30px;
+  width: 30px;
+  background-color: rgba(0,0,0,.3);
 }
 
-:local(ul li) {
-  display: inline;
+:local(.currency) {
+  font-family: Verdana;
+  font-size: 10px;
 }

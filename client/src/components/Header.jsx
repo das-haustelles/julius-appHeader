@@ -1,6 +1,7 @@
 import React from 'react';
 import HeaderLogo from './HeaderLogo.jsx'
 import HeaderNav from './HeaderNav.jsx'
+import styles from '../stylesheets/Header.css'
 
 class Header extends React.Component {
   constructor(props) {
@@ -8,9 +9,11 @@ class Header extends React.Component {
   }
   render() {
     return (
-      <div id='logo'>
-        <HeaderLogo />
-        <HeaderNav />
+      <div className={styles.header}>
+        <div id={styles.headerCont}>
+          <HeaderLogo />
+          <HeaderNav />
+        </div>
       </div>
     )
   }
