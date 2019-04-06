@@ -27,6 +27,33 @@
   margin-right: 17px;
   margin-top: 23px;
 }
+
+:local(.sidebarList) {
+  list-style: none;
+  font-family: Helvetica; 
+  padding-left: 17px;
+}
+
+:local(.listItem) {
+  color: #FF7547;
+  font-size: 12.8px ;
+  font-weight: bold;
+  padding: 8px 0px;
+}
+
+:local(Select) {
+  -webkit-appearance: scrollbarbutton-down;
+  -webkit-border-radius: 0px;
+  border-radius: 0x;
+  height: 30px;
+  width: 200px;
+  margin-right: 15px;
+}
+
+/* :local(.listHeader) {
+
+} */
+
   
 :local(.iconHolder) {
   display: flex;
@@ -43,4 +70,12 @@
 :local(.currency) {
   font-family: Verdana;
   font-size: 10px;
+}
+
+
+:local(.menuButton) {
+  float: right;
+  margin-right: 121px;
+  margin-top: 31px;
+  background-color: rgba(0,0,0,.0);
 }

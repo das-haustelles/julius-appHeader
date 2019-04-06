@@ -7,27 +7,29 @@ class HeaderNav extends React.Component {
     super(props)
 
     this.state = {
-      sidebarOpen: true
+      sidebarOpen: false
     }
 
     this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
 
-  // navMenuClick() {
-  //   // open side menu
-  //   var toggle = !this.state.sideBarOpen;
-  //   this.setState({
-  //     sideBarOpen: toggle
-  //   })
-  //   console.log('click');
-  // }
-
-  onSetSidebarOpen(open) {
-    this.setState({ sidebarOpen: open });
-    console.log('clicked');
+  onSetSidebarOpen() {
+    // open side menu
+    var toggle = !this.state.sidebarOpen;
+    this.setState({
+      sidebarOpen: toggle
+    })
+    console.log('click');
   }
 
+  // onSetSidebarOpen(open) {
+
+  //   this.setState({ sidebarDocked: true });
+  //   console.log('clicked');
+  // }
+
   render() {
+    
     return (
       <div id={styles.headerNav}>
         <ul id={styles.navList}>
@@ -55,8 +57,8 @@ class HeaderNav extends React.Component {
           </li>
           {/* DropSide Menu */}
           <li>
-            <span className={styles.iconHolder} onClick={() => this.onSetSidebarOpen(true)} >
-              <img className={styles.icon} src="http://pepispubngrill.com/img/menu.png"></img>
+            <span className={styles.iconHolder} >
+              
             </span>
           </li>
         </ul>
@@ -64,15 +66,72 @@ class HeaderNav extends React.Component {
         {/* navbar */}
         <div className='NavMenu'>
           <Sidebar
-            sidebar={<b>Sidebar content</b>}
-            
+            sidebar={
+              <ul className={styles.sidebarList}>
+                <li className={styles.listItem}>HOME</li>
+                <li className={styles.listItem}>SIGN IN / CREATE ACCOUNT</li>
+                <li className={styles.listItem}>HELP</li>
+
+                <li>
+                  <p className={styles.listHeader}>LANGUAGE</p>
+                  <select id={styles.languageSelect}>
+                    <option>cesky</option>
+                    <option>Dansk</option>
+                    <option>Deutsch</option>
+                    <option>English</option>
+                    <option>Espanol</option>
+                    <option>Francais</option>
+                    <option>Korean</option>
+                    <option>Italiano</option>
+                    <option>Nederlands</option>
+                    <option>Norsk</option>
+                    <option>Polski</option>
+                    <option>Portugues</option>
+                    <option>Portugues (Brasil)</option>
+                    <option>Russian</option>
+                    <option>Japanese</option>
+                    <option>Svenska</option>
+                    <option>Suomi</option>
+                    <option>Turk</option>
+                    <option>Chinese</option>
+                  </select>
+                </li>
+
+                <li>
+                  <p className={styles.listHeader}>CURRENCY</p>
+                  <select id={styles.currencySelect}>
+                    <option>EUR</option> <option>GBP</option> <option>USD</option>
+                    <option disabled>──────────</option>
+                    <option>AED</option> <option>ALL</option> <option>AMD</option> <option>ARS</option> <option>AUD</option> <option>AZN</option>     
+                    <option>BDT</option> <option>BGN</option> <option>BHD</option> <option>BND</option> <option>BOB</option> <option>BRL</option>
+                    <option>BSD</option> <option>BZD</option> <option>CAD</option> <option>CHF</option> <option>CLP</option> <option>CNY</option>
+                    <option>COP</option> <option>CRC</option> <option>CUC</option> <option>CZK</option> <option>DJF</option> <option>DKK</option>
+                    <option>DOP</option> <option>DZD</option> <option>EGP</option> <option>EUR</option> <option>FJD</option> <option>GBP</option>
+                    <option>GEL</option> <option>HKD</option> <option>HNL</option> <option>HRK</option> <option>HUF</option> <option>IDR</option>
+                    <option>ILS</option> <option>INR</option> <option>IRR</option> <option>ISK</option> <option>JOD</option> <option>JPY</option>
+                    <option>KES</option> <option>KGS</option> <option>KHR</option> <option>KMF</option> <option>KRW</option> <option>KWD</option>
+                    <option>KZT</option> <option>LAK</option> <option>LBP</option> <option>LKR</option> <option>MAD</option> <option>MNT</option>
+                    <option>MRO</option> <option>MUR</option> <option>MXN</option> <option>MYR</option> <option>NAD</option> <option>NIO</option> 
+                    <option>NOK</option> <option>NPR</option> <option>NZD</option> <option>OMR</option> <option>PEN</option> <option>PGK</option>
+                    <option>PHP</option> <option>PKR</option> <option>PLN</option> <option>PYG</option> <option>QAR</option> <option>RON</option>
+                    <option>RUB</option> <option>RWF</option> <option>SAR</option> <option>SEK</option> <option>SGD</option> <option>SOS</option>
+                    <option>SZL</option> <option>THB</option> <option>TND</option> <option>TOP</option> <option>TRY</option> <option>TTD</option>
+                    <option>TWD</option> <option>TZS</option> <option>UAH</option> <option>UGX</option> <option>USD</option> <option>UYU</option>
+                    <option>VEF</option> <option>VND</option> <option>VUV</option> <option>WST</option> <option>XAF</option> <option>XCD</option>  
+                  </select>
+                </li>
+              </ul>
+            }
+            pullRight={true} 
+            onClick={this.onSetSidebarOpen}
             open={this.state.sidebarOpen}
+            // docked={this.state.sidebarOpen}
             onSetOpen={this.onSetSidebarOpen}
             styles={{ sidebar: { background: "black" } }}
           >
-          <button onClick={() => this.onSetSidebarOpen(true)}>
-            Open sidebar
-          </button>
+          <span className={[styles.iconHolder, styles.menuButton].join(' ')} onClick={() => this.onSetSidebarOpen(true)}>
+            <img className={styles.icon} src="http://pepispubngrill.com/img/menu.png"></img>
+          </span>
           </Sidebar>
         </div>
 

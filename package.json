@@ -31,6 +31,7 @@
     "path": "^0.12.7",
     "puppeteer": "^1.13.0",
     "react": "^16.8.6",
+    "react-burger-menu": "^2.6.8",
     "react-dom": "^16.8.6",
     "react-sidebar": "^3.0.2",
     "redux": "^4.0.1"
