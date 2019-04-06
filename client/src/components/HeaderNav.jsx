@@ -1,10 +1,32 @@
 import React from 'react';
+import Sidebar from "react-sidebar";
 import styles from '../stylesheets/HeaderNav.css'
 
 class HeaderNav extends React.Component {
   constructor(props) {
     super(props)
+
+    this.state = {
+      sidebarOpen: true
+    }
+
+    this.onSetSidebarOpen = this.onSetSidebarOpen.bind(this);
   }
+
+  // navMenuClick() {
+  //   // open side menu
+  //   var toggle = !this.state.sideBarOpen;
+  //   this.setState({
+  //     sideBarOpen: toggle
+  //   })
+  //   console.log('click');
+  // }
+
+  onSetSidebarOpen(open) {
+    this.setState({ sidebarOpen: open });
+    console.log('clicked');
+  }
+
   render() {
     return (
       <div id={styles.headerNav}>
@@ -33,23 +55,33 @@ class HeaderNav extends React.Component {
           </li>
           {/* DropSide Menu */}
           <li>
-            <span className={styles.iconHolder}>
+            <span className={styles.iconHolder} onClick={() => this.onSetSidebarOpen(true)} >
               <img className={styles.icon} src="http://pepispubngrill.com/img/menu.png"></img>
             </span>
           </li>
         </ul>
+
+        {/* navbar */}
+        <div className='NavMenu'>
+          <Sidebar
+            sidebar={<b>Sidebar content</b>}
+            
+            open={this.state.sidebarOpen}
+            onSetOpen={this.onSetSidebarOpen}
+            styles={{ sidebar: { background: "black" } }}
+          >
+          <button onClick={() => this.onSetSidebarOpen(true)}>
+            Open sidebar
+          </button>
+          </Sidebar>
+        </div>
+
       </div>
     )
   }
 }
 
+
+
+
 export default HeaderNav;
-
-
-/*
-1. Signin
-2. Language 
-3. Currency
-4. Search
-5. DropSide Menu
-*/
