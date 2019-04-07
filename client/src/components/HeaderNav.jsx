@@ -19,14 +19,7 @@ class HeaderNav extends React.Component {
     this.setState({
       sidebarOpen: toggle
     })
-    console.log('click');
   }
-
-  // onSetSidebarOpen(open) {
-
-  //   this.setState({ sidebarDocked: true });
-  //   console.log('clicked');
-  // }
 
   render() {
     
@@ -73,32 +66,32 @@ class HeaderNav extends React.Component {
                 <li className={styles.listItem}>HELP</li>
 
                 <li>
-                  <p className={styles.listHeader}>LANGUAGE</p>
+                  <p className={styles.listHeader}>LANGUAGE:</p>
                   <select id={styles.languageSelect}>
-                    <option>cesky</option>
+                    <option>český</option>
                     <option>Dansk</option>
                     <option>Deutsch</option>
                     <option>English</option>
-                    <option>Espanol</option>
-                    <option>Francais</option>
-                    <option>Korean</option>
+                    <option>español</option>
+                    <option>Français</option>
+                    <option>한국어</option>
                     <option>Italiano</option>
                     <option>Nederlands</option>
                     <option>Norsk</option>
                     <option>Polski</option>
-                    <option>Portugues</option>
-                    <option>Portugues (Brasil)</option>
-                    <option>Russian</option>
-                    <option>Japanese</option>
+                    <option>Português</option>
+                    <option>Português (Brasil)</option>
+                    <option>Pусский</option>
+                    <option>日本語</option>
                     <option>Svenska</option>
                     <option>Suomi</option>
-                    <option>Turk</option>
-                    <option>Chinese</option>
+                    <option>Türk</option>
+                    <option>中文</option>
                   </select>
                 </li>
 
                 <li>
-                  <p className={styles.listHeader}>CURRENCY</p>
+                  <p className={styles.listHeader}>CURRENCY:</p>
                   <select id={styles.currencySelect}>
                     <option>EUR</option> <option>GBP</option> <option>USD</option>
                     <option disabled>──────────</option>
@@ -120,6 +113,27 @@ class HeaderNav extends React.Component {
                     <option>VEF</option> <option>VND</option> <option>VUV</option> <option>WST</option> <option>XAF</option> <option>XCD</option>  
                   </select>
                 </li>
+
+                  <span className={styles.listHeader}>ACCOMMODATION</span>
+                  <ul className={styles.sidebarList}>
+                    <li className={styles.listItem}>HOSTELS</li>
+                    <li className={styles.listItem}>HOTELS</li>
+                    <li className={styles.listItem}>BED AND BREAKFASTS</li>
+                  </ul>
+
+                  <span className={styles.listHeader}>EXPLORE HOSTELWORLD</span>
+                  <ul className={styles.sidebarList}>
+                    <li className={styles.listItem}>BLOG</li>
+                    <li className={styles.listItem}>GROUP BOOKINGS</li>
+                    <li className={styles.listItem}>BOOKING GUARANTEE</li>
+                    <li className={styles.listItem}>HOSTEL AWARDS</li>
+                  </ul>
+
+                  <span className={styles.listHeader}>WORK WITH US</span>
+                  <ul className={styles.sidebarList}>
+                    <li className={styles.listItem}>HOSTEL SIGN UP</li>
+                    <li className={styles.listItem}>AFFILITATE PROGRAM</li>
+                  </ul>
               </ul>
             }
             pullRight={true} 
