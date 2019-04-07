@@ -64,7 +64,7 @@
   justify-content: center;
   align-items: center;
   margin-left: 11px;
-  /*order: 1px solid yellow;*/     /* Guide if misaligned menu */ 
+  /*border: 1px solid yellow;*/     /* Guide if misaligned menu */ 
   height: 30px;
   width: 30px;
   background-color: rgba(0,0,0,.3);
