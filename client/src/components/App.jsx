@@ -5,9 +5,9 @@ import styles from '../stylesheets/App.css'
 class App extends React.Component {
   constructor(props) {
     super(props)
-  }
-  render() {
-    return (
+  } 
+  render() {  
+    return ( 
       <div id={styles.mainCont}>
         <Header />
       </div>
@@ -15,7 +15,4 @@ class App extends React.Component {
   }
 }
 
-
-
 export default App;
-

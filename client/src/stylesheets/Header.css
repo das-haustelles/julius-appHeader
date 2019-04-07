@@ -1,9 +1,9 @@
 
 :local(.topCont) {
-  background-color: brown;
+  background-color: grey;
   width: 100%;
   height: 433px;
-  background-image: url(https://ainhoaaristizabal.files.wordpress.com/2013/05/cityscapes-night-lights-new-york-city-scenic-skyscapes-fresh-new-hd-wallpaper-1.jpg);
+  /* background-image: url(https://ainhoaaristizabal.files.wordpress.com/2013/05/cityscapes-night-lights-new-york-city-scenic-skyscapes-fresh-new-hd-wallpaper-1.jpg); */
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
