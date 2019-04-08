@@ -20,6 +20,7 @@
 > Some usage instructions
 npm run start
 npm run start:dev
+npm run seedDB
 npm run compile
 
 ## Requirements

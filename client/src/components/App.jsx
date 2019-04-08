@@ -1,13 +1,14 @@
 import React from 'react';
-import Header from './Header.jsx'
+import Header from './Header.jsx';
 
-import styles from '../stylesheets/App.css'
+import styles from '../stylesheets/App.css';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
+  }
 
-  render() {  
+  render() {
     return ( 
       <div id={styles.mainCont}>
         <Header />
@@ -17,4 +18,4 @@ class App extends React.Component {
 }
 
 
-export default App;
+export default App
