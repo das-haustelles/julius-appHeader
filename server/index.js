@@ -2,6 +2,7 @@ require('../database/index.js');
 
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
 // const server = require('../public/index.html');
 
 const Location = require('../database/schemas/Location.js');
@@ -11,11 +12,9 @@ const Signin = require('../database/schemas/Signin.js');
 const app = express();
 const port = 3000;
 
-app.use(cors());
+app.use(express.static(path.join(__dirname, '../client/dist')));
 
-app.get('/', (req, res) => {
-  res.send();
-});
+app.use(cors());
 
 // Mock tests
 app.get('/settings', (req, res) => {

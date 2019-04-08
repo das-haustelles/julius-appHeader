@@ -3,16 +3,6 @@ import styles from '../stylesheets/Location.css'
 
 class Location extends React.Component {
   constructor(props) {
-<<<<<<< HEAD
-    super(props)
-  }
-  render() {
-    return (
-      <div className={styles.locationCont}>
-        {/* Badges */}
-        {/* Hierarchy */}
-        A
-=======
     super(props);
 
     this.state = {
@@ -58,7 +48,6 @@ class Location extends React.Component {
             {this.state.address}
           </div>
         </div>
->>>>>>> location
       </div>
     )
   }
