@@ -1,4 +1,5 @@
 import React from 'react';
+
 import HeaderLogo from './HeaderLogo.jsx'
 import HeaderNav from './HeaderNav.jsx'
 import Location from './Location.jsx'
@@ -22,3 +23,4 @@ class Header extends React.Component {
 }
 
 export default Header;
+
