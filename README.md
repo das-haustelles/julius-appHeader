@@ -18,6 +18,9 @@
 ## Usage
 
 > Some usage instructions
+npm run start
+npm run start:dev
+npm run compile
 
 ## Requirements
 
