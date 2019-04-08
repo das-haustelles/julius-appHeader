@@ -154,7 +154,4 @@ class HeaderNav extends React.Component {
   }
 }
 
-
-
-
 export default HeaderNav;

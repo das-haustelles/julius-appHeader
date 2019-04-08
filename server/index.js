@@ -2,6 +2,7 @@ require('../database/index.js');
 
 const express = require('express');
 const cors = require('cors');
+// const server = require('../public/index.html');
 
 const Location = require('../database/schemas/Location.js');
 const Settings = require('../database/schemas/Settings.js');
@@ -13,7 +14,7 @@ const port = 3000;
 app.use(cors());
 
 app.get('/', (req, res) => {
-  res.send(200);
+  res.send();
 });
 
 // Mock tests
