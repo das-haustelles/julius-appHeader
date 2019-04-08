@@ -32,7 +32,7 @@
 
 :local(.sidebarList) {
   list-style: none;
-  font-family: Helvetica; 
+  font-family: Noto Arial, Helvetica, sans-serif; 
   padding-left: 8px;
 }
 
@@ -71,7 +71,7 @@
 }
 
 :local(.currency) {
-  font-family: Verdana;
+  font-family: Noto Arial, Helvetica, sans-serif;
   font-size: 10px;
 }
 
