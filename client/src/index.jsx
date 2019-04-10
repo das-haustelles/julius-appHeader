@@ -1,5 +1,3 @@
 import HeaderModule from './components/App.jsx'
 
-// ReactDOM.render(<HeaderModule />, document.getElementById('app'));
-
-window.HeaderModule = HeaderModule;
+ReactDOM.render(<HeaderModule />, document.getElementById('HeaderModule'));
