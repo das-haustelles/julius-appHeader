@@ -18,10 +18,9 @@
 ## Usage
 
 > Some usage instructions
-npm run start
-npm run start:dev
-npm run seedDB
-npm run compile
+start server:  npm run start
+start webpack: npm run build
+seed database: npm run seedDB
 
 ## Requirements
 

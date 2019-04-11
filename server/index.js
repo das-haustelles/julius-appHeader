@@ -10,7 +10,7 @@ const Settings = require('../database/schemas/Settings.js');
 const Signin = require('../database/schemas/Signin.js');
 
 const app = express();
-const port = 3000;
+const port = 3002;
 
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
